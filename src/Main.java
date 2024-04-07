@@ -5,13 +5,21 @@ import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
+    Case1 case1 = new Case1();
+    }
+
+
+}
+
+class Case1{
+    public Case1(){
         Map<String, String> row1 = new HashMap<>();
         List<Map<String,String>> table = new ArrayList<Map<String,String>>();
-            row1.put("Имя", "Кирилл");
-            row1.put("Возраст","26");
-            row1.put("Должность", "мидл");
-            row1.put("Зарплата","15000 руб");
-            table.add(row1);
+        row1.put("Имя", "Кирилл");
+        row1.put("Возраст", "26");
+        row1.put("Должность", "мидл");
+        row1.put("Зарплата", "15000 руб");
+        table.add(row1);
 
         Map<String, String> row2 = new HashMap<>();
         row2.put("Имя", "Виталий");
@@ -38,9 +46,7 @@ public class Main {
         System.out.println(SalaryinRub(table));
         System.out.println(MeanAge(table));
 
-
     }
-
 
     public static List<Map<String,String>> SortbyAge( List<Map<String,String>>table){
         List<Map<String,String>> sortedTable = new ArrayList<>();
